@@ -45,5 +45,18 @@ class Act3GrupalTests: XCTestCase {
         XCTAssertEqual(sumarDosNumerosNaturales, 3, "Deberia de devolver un 3")
 
     }
+    
+    func test_CalcularMultiplicar() {
+        
+        //Given
+        let calculadora = Calculadora()
+        
+        //Then
+        let sumarDosNumerosNaturales = calculadora.multiplicar(num1: 5, num2: 5)
+        
+        //When
+        XCTAssertEqual(sumarDosNumerosNaturales, 25, "Deberia de devolver un 25")
+        
+    }
 
 }
