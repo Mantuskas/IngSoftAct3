@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Act3Grupal
 
 class Act3GrupalUITests: XCTestCase {
     
@@ -24,6 +25,11 @@ class Act3GrupalUITests: XCTestCase {
         
         //GIVEN
         let calculadora = Calculadora()
+        
+        //WHEN
+        
+        
+        //THEN
         
     }
     

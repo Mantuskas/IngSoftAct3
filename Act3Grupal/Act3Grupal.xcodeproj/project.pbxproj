@@ -17,6 +17,7 @@
 		F2F3C81A2840F8A00097043C /* Act3GrupalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F3C8192840F8A00097043C /* Act3GrupalTests.swift */; };
 		F2F3C8242840F8A00097043C /* Act3GrupalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F3C8232840F8A00097043C /* Act3GrupalUITests.swift */; };
 		F2F3C8262840F8A00097043C /* Act3GrupalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F3C8252840F8A00097043C /* Act3GrupalUITestsLaunchTests.swift */; };
+		F2F3C8332840FDDD0097043C /* Calculadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F3C8322840FDDD0097043C /* Calculadora.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F2F3C81F2840F8A00097043C /* Act3GrupalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Act3GrupalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F3C8232840F8A00097043C /* Act3GrupalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act3GrupalUITests.swift; sourceTree = "<group>"; };
 		F2F3C8252840F8A00097043C /* Act3GrupalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Act3GrupalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2F3C8322840FDDD0097043C /* Calculadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				F2F3C80D2840F8A00097043C /* LaunchScreen.storyboard */,
 				F2F3C8102840F8A00097043C /* Info.plist */,
 				F2F3C8082840F89D0097043C /* Act3Grupal.xcdatamodeld */,
+				F2F3C8322840FDDD0097043C /* Calculadora.swift */,
 			);
 			path = Act3Grupal;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F3C8042840F89D0097043C /* ViewController.swift in Sources */,
+				F2F3C8332840FDDD0097043C /* Calculadora.swift in Sources */,
 				F2F3C80A2840F89D0097043C /* Act3Grupal.xcdatamodeld in Sources */,
 				F2F3C8002840F89D0097043C /* AppDelegate.swift in Sources */,
 				F2F3C8022840F89D0097043C /* SceneDelegate.swift in Sources */,
