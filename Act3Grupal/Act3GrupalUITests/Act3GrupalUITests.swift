@@ -18,4 +18,13 @@ class Act3GrupalUITests: XCTestCase {
         
     }
     
+    //Creamos el primer test de suma
+    
+    func test_CalcularSuma() {
+        
+        //GIVEN
+        let calculadora = Calculadora()
+        
+    }
+    
 }
