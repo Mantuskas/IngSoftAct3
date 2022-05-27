@@ -9,28 +9,5 @@ import XCTest
 @testable import Act3Grupal
 
 class Act3GrupalUITests: XCTestCase {
-    
-    
-    override func setUp() {
         
-    }
-    
-    override func tearDown() {
-        
-    }
-    
-    //Creamos el primer test de suma
-    
-    func test_CalcularSuma() {
-        
-        //GIVEN
-        let calculadora = Calculadora()
-        
-        //WHEN
-        
-        
-        //THEN
-        
-    }
-    
 }
