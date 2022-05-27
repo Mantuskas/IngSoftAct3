@@ -10,12 +10,17 @@ import XCTest
 
 class Act3GrupalTests: XCTestCase {
 
+    // SUT = System under test
+    var sut: Calculadora!
+
+    // Crearemos la instancia en cada test 
     override func setUp() {
-        
+        sut = Calculadora()
     }
     
+    //Destruiremos la instancia en cada test para liberar memoria
     override func tearDown() {
-        
+        sut = nil
     }
     
     //Creamos el primer test de suma
@@ -23,10 +28,10 @@ class Act3GrupalTests: XCTestCase {
     func test_CalcularSuma() {
         
         //GIVEN
-        let calculadora = Calculadora()
+        
         
         //WHEN
-        let sumarDosNumerosNaturales = calculadora.suma(num1: 10, num2: 3)
+        let sumarDosNumerosNaturales = sut.suma(num1: 10, num2: 3)
         
         //THEN
         XCTAssertEqual(sumarDosNumerosNaturales, 13, "Deberia de devolver un 13")
@@ -36,10 +41,10 @@ class Act3GrupalTests: XCTestCase {
     func test_CalcularResta() {
         
         //Given
-        let calculadora = Calculadora()
+        
         
         //WHEN
-        let sumarDosNumerosNaturales = calculadora.restar(num1: 5, num2: 2)
+        let sumarDosNumerosNaturales = sut.restar(num1: 5, num2: 2)
         
        //THEN
         XCTAssertEqual(sumarDosNumerosNaturales, 3, "Deberia de devolver un 3")
@@ -49,10 +54,10 @@ class Act3GrupalTests: XCTestCase {
     func test_CalcularMultiplicar() {
         
         //GIVEN
-        let calculadora = Calculadora()
+        
         
         //WHEN
-        let sumarDosNumerosNaturales = calculadora.multiplicar(num1: 5, num2: 5)
+        let sumarDosNumerosNaturales = sut.multiplicar(num1: 5, num2: 5)
         
         //THEN
         XCTAssertEqual(sumarDosNumerosNaturales, 25, "Deberia de devolver un 25")
@@ -62,10 +67,10 @@ class Act3GrupalTests: XCTestCase {
     func test_CalcularDivision() {
         
         //GIVEN
-        let calculadora = Calculadora()
+        
         
         //WHEN
-        let sumarDosNumerosNaturales = calculadora.dividir(num1: 15, num2: 3)
+        let sumarDosNumerosNaturales = sut.dividir(num1: 15, num2: 3)
         //THEN
         XCTAssertEqual(sumarDosNumerosNaturales, 5, "Deberia de devolver un 0")
         
@@ -75,10 +80,10 @@ class Act3GrupalTests: XCTestCase {
     func test_RaizCuadrada() {
         
         //Given
-        let calculadora = Calculadora()
+        
         
         //WHEN
-        let sumarDosNumerosNaturales = calculadora.raizCuadrada(num: 64)
+        let sumarDosNumerosNaturales = sut.raizCuadrada(num: 64)
 
         //THEN
         XCTAssertEqual(sumarDosNumerosNaturales, 8.0, "Deberia de devolver un 8.0")
@@ -88,11 +93,11 @@ class Act3GrupalTests: XCTestCase {
     func test_exponencial () {
         
         //Given
-        let calculadora = Calculadora()
+        
 
         //WHEN
-        let sumarDosNumerosNaturales = calculadora.exponencial(5, 5)
-        
+        let sumarDosNumerosNaturales = sut.exponencial(5, 5)
+
         //THEN
         XCTAssertEqual(sumarDosNumerosNaturales, 3125, "Deberia de devolver un 3125")
     }
