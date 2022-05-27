@@ -21,4 +21,8 @@ class Calculadora {
         num1 * num2
     }
     
+    func dividir(num1: Double, num2: Double) -> Double {
+        num1 / num2
+    }
+    
 }
