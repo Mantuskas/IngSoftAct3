@@ -34,5 +34,13 @@ class Calculadora {
         }
         return Double(x2);
     }
+
+    func exponencial(_ x: Int, _ y: Int) -> Int {
+        var result = 1
+        for i in 0..<y {
+            result *= x
+        }
+        return result
+    }
     
 }

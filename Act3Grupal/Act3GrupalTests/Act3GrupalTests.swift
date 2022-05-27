@@ -77,11 +77,24 @@ class Act3GrupalTests: XCTestCase {
         //Given
         let calculadora = Calculadora()
         
-        //Then
+        //WHEN
         let sumarDosNumerosNaturales = calculadora.raizCuadrada(num: 64)
-        //When
+
+        //THEN
         XCTAssertEqual(sumarDosNumerosNaturales, 8.0, "Deberia de devolver un 8.0")
         
+    }
+
+    func test_exponencial () {
+        
+        //Given
+        let calculadora = Calculadora()
+
+        //WHEN
+        let sumarDosNumerosNaturales = calculadora.exponencial(5, 5)
+        
+        //THEN
+        XCTAssertEqual(sumarDosNumerosNaturales, 3125, "Deberia de devolver un 3125")
     }
 
 }
