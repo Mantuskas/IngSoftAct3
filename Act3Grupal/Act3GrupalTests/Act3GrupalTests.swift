@@ -71,5 +71,17 @@ class Act3GrupalTests: XCTestCase {
         
         
     }
+    
+    func test_RaizCuadrada() {
+        
+        //Given
+        let calculadora = Calculadora()
+        
+        //Then
+        let sumarDosNumerosNaturales = calculadora.raizCuadrada(num: 64)
+        //When
+        XCTAssertEqual(sumarDosNumerosNaturales, 8.0, "Deberia de devolver un 8.0")
+        
+    }
 
 }
